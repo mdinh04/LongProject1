@@ -1,0 +1,87 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>How to Access CS Servers</title>
+</head>
+
+<body>
+
+<div class="header">
+    CS Server Resources
+</div>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Student_Resources.html">Student Resources</a>
+    <a href="Tutorials.html">Tutorials</a>
+    <a href="Technical_Resources.html">Technical Resources</a>
+    <a href="Servers.html">How to Access CS Servers</a>
+    <a href="History.html">History</a>
+    <a href="FAQ.html">FAQ</a>
+</div>
+
+<div class="middle">
+
+    <a class="link-button"
+       href="https://www.cs.umb.edu/~hdeblois/cs410/s26/longproj-02/EnockAyiku_CSWebsiteTourAndUpdate_cs410-02.pdf"
+       target="_blank">
+        View Project Requirements Here
+    </a>
+    
+    <div class="section" id="servers">
+        <div class="section-title">How to Access CS Servers</div>
+        <div class="section-content">
+            Instructions for connecting to CS department servers using SSH and other remote access tools.
+        <br>
+            Use Secure Shell (ssh) to connect to `users.cs.umb.edu`.
+        <br>
+            For Windows users:
+        <br>
+            We recommend the following free ssh client console/file transfer packages:
+        <br>
+            [PuTTY] (https://www.puttyssh.org).
+        <br>
+            [Bitvise] (https://www.bitvise.com/ssh-client-download).
+        <br>
+            For Mac users:
+        <br>
+            We recommend the Terminal application that comes with the Mac.
+        </div>
+    </div>
+
+    <div class="section" id="How to set up Passwordless Login">
+        <div class="section-title">How to set up Passwordless Login</div>
+        <div class="section-content">
+        Check if you already have preexisting SSH key 
+                <br> 
+                    ls -al ~/.ssh/id_*.pub
+                <br> 
+                    If you do, you can skip next step and upload them, or back them up and generate a new key
+                <br>
+                    Open terminal and run the command 
+                <br>
+                    ssh-keygen -t ed25519
+                <br> 
+                    Press enter to accept the default file location and file name
+                <br>
+                    Decide whether or not you want a keyphrase
+                <br> 
+                    Verify the process by running the command
+                <br>
+                    ls ~/.ssh/id_*
+                <br>
+                    Copy the key to the server with the command below and enter your password when prompted
+                <br> 
+                    ssh-copy-id username@users.cs.umb.edu
+                <br>
+                    If your machine does not have ssh-copy-id, use the below command
+                <br> 
+                    cat ~/.ssh/id_ed25519.pub | ssh username@users.cs.umb.edu "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+                <br>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
