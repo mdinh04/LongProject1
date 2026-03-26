@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS Website - Outdated Information Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+        h2 {
+            color: #002b5c;
+            margin-bottom: 6px;
+        }
+        p.subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            font-size: 14px;
+        }
+        th {
+            background: #002b5c;
+            color: white;
+            padding: 12px 16px;
+            text-align: left;
+        }
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid #ddd;
+            color: #444;
+        }
+        tr:hover { background: #f9f9f9; }
+        .badge {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .outdated { background: #f8d7da; color: #721c24; }
+        .ok       { background: #d4edda; color: #155724; }
+    </style>
+</head>
+<body>
+
+    <h2>Outdated Information Check</h2>
+    <p class="subtitle">Checked: <strong>https://www.cs.umb.edu/</strong> — reviewing page content for outdated information.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Section</th>
+                <th>What Was Found</th>
+                <th>Why It's Outdated</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Resources Menu</td>
+                <td>Link labeled "Dreamspark/Microsoft Imagine"</td>
+                <td>Microsoft rebranded this to "Azure Dev Tools for Teaching" — old name no longer used</td>
+                <td><span class="badge outdated">Outdated</span></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Research News</td>
+                <td>Latest research post is from Sep 2024</td>
+                <td>No research updates posted in 2025 — may need new content added</td>
+                <td><span class="badge outdated">Outdated</span></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Home Page</td>
+                <td>News and Events sections present</td>
+                <td>Most recent news is Sep 2025 — content appears reasonably current</td>
+                <td><span class="badge ok">OK</span></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Facilities Page</td>
+                <td>Needs manual check for McCormack 3rd Floor update</td>
+                <td>Department moved in 2021 — verify page reflects current location</td>
+                <td><span class="badge outdated">Outdated</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
