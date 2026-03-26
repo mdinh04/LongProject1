@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS Student Resources | UMass Boston</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* 🔥 NEW NAVBAR */
+    .navbar {
+      background-color: #00509e;
+      padding: 12px 0;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .intro h2 {
+      color: #003366;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #00509e;
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+      font-size: 0.93rem;
+    }
+
+    .card a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-top: 50px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+    }
+
+    .section p {
+      margin-bottom: 12px;
+      font-size: 0.97rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.7rem;
+      }
+
+      .navbar a {
+        display: inline-block;
+        margin: 8px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Computer Science Student Resources</h1>
+    <p>
+      Explore internships, career opportunities, student clubs, and research experiences
+      available to Computer Science students at UMass Boston.
+    </p>
+  </header>
+
+  <!-- 🔥 TEAM NAVBAR -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Student_Resources.html">Student Resources</a>
+    <a href="Tutorials.html">Tutorials</a>
+    <a href="Technical_Resources.html">Technical Resources</a>
+    <a href="Servers.html">How to Access CS Servers</a>
+    <a href="History.html">History</a>
+    <a href="FAQ.html">FAQ</a>
+  </div>
+
+  <div class="container">
+    <div class="intro">
+      <h2>Resources Beyond the Classroom</h2>
+      <p>
+        This page helps Computer Science students discover useful opportunities outside of class,
+        build experience, and connect with the CS community.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card" id="internships">
+        <h3>Internships</h3>
+        <p>
+          Internships help students gain real-world experience in software development,
+          cybersecurity, data science, IT support, and other technical fields.
+        </p>
+        <ul>
+          <li>Search for internships through Handshake</li>
+          <li>Attend university career fairs</li>
+          <li>Apply on company websites</li>
+          <li>Build experience before graduation</li>
+        </ul>
+        <p><a href="#">View Internship Resources</a></p>
+      </div>
+
+      <div class="card" id="careers">
+        <h3>Career Opportunities</h3>
+        <p>
+          Computer Science students can explore different career paths and prepare for
+          jobs through resume workshops, interview practice, and professional guidance.
+        </p>
+        <ul>
+          <li>Resume and cover letter support</li>
+          <li>Interview preparation</li>
+          <li>Career fairs and employer events</li>
+          <li>Networking with professionals</li>
+        </ul>
+        <p><a href="#">Explore Career Support</a></p>
+      </div>
+
+      <div class="card" id="clubs">
+        <h3>CS Clubs</h3>
+        <p>
+          Student clubs help you meet other students, work on projects, attend events,
+          and build your technical and leadership skills.
+        </p>
+        <ul>
+          <li>Join coding and technology clubs</li>
+          <li>Participate in hackathons</li>
+          <li>Collaborate on group projects</li>
+          <li>Connect with peers in CS</li>
+        </ul>
+        <p><a href="#">See Student Organizations</a></p>
+      </div>
+
+      <div class="card" id="research">
+        <h3>Research Opportunities</h3>
+        <p>
+          Students can work with faculty on research in areas such as artificial intelligence,
+          machine learning, cybersecurity, and data science.
+        </p>
+        <ul>
+          <li>Work with faculty mentors</li>
+          <li>Join research labs and projects</li>
+          <li>Gain hands-on academic experience</li>
+          <li>Prepare for graduate study or industry roles</li>
+        </ul>
+        <p><a href="#">Learn About Research</a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why These Resources Matter</h2>
+      <p>
+        Student resources are important because they help Computer Science students grow outside
+        of the classroom. Internships provide practical experience, clubs create a sense of community,
+        career support helps students prepare for the future, and research opportunities allow students
+        to explore advanced topics with faculty.
+      </p>
+      <p>
+        Together, these resources make the CS website more helpful, informative, and useful for both
+        current and future students.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>UMass Boston | Computer Science Student Resources</p>
+  </footer>
+
+</body>
+</html>
